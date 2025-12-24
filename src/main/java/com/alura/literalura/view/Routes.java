@@ -11,7 +11,7 @@ import java.util.Scanner;
 import java.util.List;
 
 @Component
-public class routes {
+public class Routes {
     private Scanner leitura = new Scanner(System.in);
     private ConsumoApi consumo = new ConsumoApi();
     private ConverteDados conversor = new ConverteDados();
@@ -20,7 +20,7 @@ public class routes {
     private final LivroRepository livroRepository;
     private final AutorRepository autorRepository;
 
-    public routes(LivroRepository livroRepository, AutorRepository autorRepository) {
+    public Routes(LivroRepository livroRepository, AutorRepository autorRepository) {
         this.livroRepository = livroRepository;
         this.autorRepository = autorRepository;
     }
